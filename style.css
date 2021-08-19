@@ -1,0 +1,43 @@
+/* Show it's not fixed to the top */
+body {
+  min-height: 75rem;
+}
+body a {
+  color: #ffffff;
+}
+.bg {
+  background-color: #046ecc;
+  color: #ffffff;
+}
+.nav-link {
+  color: #ffffff;
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+.form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+}
+.form-check .form-check-input {
+  float: none;
+  margin-left: -1.5em;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #000;
+}
+.nav-tabs .nav-link {
+  color: #000;
+}
+.smalls {
+  font-size: 0.675em;
+}
+.box {
+  padding: 0px 8px;
+  width: 24%;
+  margin: 15px auto;
+}
+.ccc .form-check{
+  margin-bottom: 1.125rem;
+}

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Regeneron Home</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-static/">
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md bg mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="#">Regeneron</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Search</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <aside class="bd-aside sticky-xl-top text-muted bg-light align-self-start mb-3 mb-xl-5 p-3">
+          <h2 class="h6 pt-2 pb-3 mb-4 border-bottom">Therapeutic Area</h2>
+          <nav class="small" id="toc">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Asthma" checked>
+              <label class="form-check-label" for="Asthma">
+                Asthma
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Cardiovascular">
+              <label class="form-check-label" for="Cardiovascular">
+                Cardiovascular
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Immunology">
+              <label class="form-check-label" for="Immunology">
+                Immunology
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Oncology">
+              <label class="form-check-label" for="Oncology">
+                Oncology
+              </label>
+            </div>
+          </nav>
+          <h2 class="h6 pt-2 pb-3 mb-4 border-bottom">Country</h2>
+          <nav class="small" id="toc">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="all" checked>
+              <label class="form-check-label" for="all">
+                All
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="australia">
+              <label class="form-check-label" for="australia">
+                Australia
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="austria">
+              <label class="form-check-label" for="austria">
+                Austria
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="canada">
+              <label class="form-check-label" for="canada">
+                Canada
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="uk">
+              <label class="form-check-label" for="uk">
+                United Kingdom
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="usa">
+              <label class="form-check-label" for="usa">
+                United State
+              </label>
+            </div>
+          </nav>
+        </aside>
+      </div>
+      <div class="col-md-9">
+        <h2 class="h6 pt-2 pb-3 mb-4 border-bottom">Result for selected Therapeutic Area And Countries</h2>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+              role="tab" aria-controls="home" aria-selected="true">All</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+              role="tab" aria-controls="profile" aria-selected="false">Publications</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button"
+              role="tab" aria-controls="messages" aria-selected="false">Dataset</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button"
+              role="tab" aria-controls="settings" aria-selected="false">Tabels</button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+              <div class="col-md-3 mt-4 ccc">
+                <small class="smalls">Core Country Commmittee:Assessment</small>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="australia">
+                  <label class="form-check-label" for="australia">
+                    Australia
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="austria">
+                  <label class="form-check-label" for="austria">
+                    Austria
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="canada">
+                  <label class="form-check-label" for="canada">
+                    Canada
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="uk">
+                  <label class="form-check-label" for="uk">
+                    United Kingdom
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="usa">
+                  <label class="form-check-label" for="usa">
+                    United State
+                  </label>
+                </div>
+              </div>
+
+              <div class="col mt-4">
+                <small class="smalls">DQS:# of Assessment</small>
+                <div class="box  border ">20</div>
+                <div class="box  border ">23</div>
+                <div class="box  border ">25</div>
+                <div class="box  border ">24</div>
+                <div class="box  border ">26</div>
+              </div>
+              <div class="col mt-4">
+                <small class="smalls">DQS:Median # Patients Per site</small>
+                <div class="box  border ">4</div>
+                <div class="box  border ">4</div>
+                <div class="box  border ">4</div>
+                <div class="box  border ">4</div>
+                <div class="box  border ">4</div>
+              </div>
+              <div class="col mt-4">
+                <small class="smalls">DQS:# Median enrol rate per active site</small>
+                <div class="box  border ">4</div>
+                <div class="box  border ">5</div>
+                <div class="box  border ">6</div>
+                <div class="box  border ">7</div>
+                <div class="box  border ">8</div>
+              </div>
+              <div class="col mt-4">
+                <small class="smalls">SO:Median sites Immunology >250pts</small>
+                <div class="box  border ">7</div>
+                <div class="box  border ">5</div>
+                <div class="box  border ">4</div>
+                <div class="box  border ">26</div>
+                <div class="box  border ">6</div>
+              </div>
+              <div class="col mt-4">
+                <small class="smalls">SO:# Speed Country Startup in month</small>
+                <div class="box  border ">7</div>
+                <div class="box  border ">5</div>
+                <div class="box  border ">4</div>
+                <div class="box  border ">26</div>
+                <div class="box  border ">6</div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">ssssssss</div>
+          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+          <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">sss</div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-end mt-4">
+           
+              <button type="button" class="btn mx-2 bg">Schedule CCC</button>
+              <button type="button" class="btn mx-2 bg">Comments</button>
+              <button type="button" class="btn mx-2 bg">Approve</button>
+           
+          </div>
+        </div>
+
+      </div>
+    </div>
+   
+  </main>
+
+
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var firstTabEl = document.querySelector('#myTab li:last-child a')
+    var firstTab = new bootstrap.Tab(firstTabEl)
+
+    firstTab.show()
+  </script>
+</body>
+
+</html>
